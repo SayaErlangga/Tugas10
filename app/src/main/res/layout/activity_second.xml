@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/foto_siswa"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nama_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Siswa"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/foto_siswa"
+        app:layout_constraintStart_toStartOf="@+id/foto_siswa"
+        app:layout_constraintTop_toBottomOf="@+id/foto_siswa" />
+
+    <TextView
+        android:id="@+id/ipk_siswa_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_siswa"
+        android:layout_marginTop="10dp"
+        android:text="IPK"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/foto_siswa"
+        app:layout_constraintTop_toBottomOf="@+id/nama_siswa" />
+
+    <TextView
+        android:id="@+id/ipk_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_siswa"
+        android:text="IPK"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/foto_siswa"
+        app:layout_constraintTop_toTopOf="@+id/ipk_siswa_txt" />
+
+    <TextView
+        android:id="@+id/lokasi_siswa_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_siswa"
+        android:layout_marginTop="10dp"
+        android:text="Lokasi"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/foto_siswa"
+        app:layout_constraintTop_toBottomOf="@+id/ipk_siswa_txt" />
+
+    <TextView
+        android:id="@+id/lokasi_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_siswa"
+        android:text="Lokasi"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/foto_siswa"
+        app:layout_constraintTop_toTopOf="@+id/lokasi_siswa_txt" />
+
+    <TextView
+        android:id="@+id/birth_siswa_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_siswa"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal Lahir"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/foto_siswa"
+        app:layout_constraintTop_toBottomOf="@+id/lokasi_siswa_txt" />
+
+    <TextView
+        android:id="@+id/birth_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_siswa"
+        android:text="Tanggal Lahir"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/foto_siswa"
+        app:layout_constraintTop_toTopOf="@+id/birth_siswa_txt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
